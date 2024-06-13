@@ -1,0 +1,64 @@
+{
+    "captured_pokemons": [
+        {
+            "name": "Ivysaur",
+            "types": [
+                "grass",
+                "poison"
+            ],
+            "number": "2",
+            "stats": {
+                "hp": 60,
+                "attack": 62,
+                "defense": 63,
+                "speed": 60,
+                "sp_atk": 80,
+                "sp_def": 80
+            },
+            "exp": "142",
+            "level": 1,
+            "accumulated_exp": 0,
+            "ev": 0.7080895827118058
+        },
+        {
+            "name": "Bulbasaur",
+            "types": [
+                "grass",
+                "poison"
+            ],
+            "number": "1",
+            "stats": {
+                "hp": 45,
+                "attack": 49,
+                "defense": 49,
+                "speed": 45,
+                "sp_atk": 65,
+                "sp_def": 65
+            },
+            "exp": "64",
+            "level": 1,
+            "accumulated_exp": 0,
+            "ev": 0.7396552333608498
+        },
+        {
+            "name": "Ivysaur",
+            "types": [
+                "grass",
+                "poison"
+            ],
+            "number": "2",
+            "stats": {
+                "hp": 115,
+                "attack": 118,
+                "defense": 120,
+                "speed": 60,
+                "sp_atk": 153,
+                "sp_def": 153
+            },
+            "exp": "142",
+            "level": 2,
+            "accumulated_exp": 42,
+            "ev": 0.9182893725736312
+        }
+    ]
+}
