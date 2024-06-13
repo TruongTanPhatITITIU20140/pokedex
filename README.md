@@ -28,14 +28,14 @@ pokedex
 **Persistence:** Save and load the game state using JSON files.
 
 ## Requirements
-Go programming language (version 1.16+)
-github.com/chromedp/chromedp for scraping Pokemon data.
-github.com/gocolly/colly for additional data fetching.
+- Go programming language (version 1.16+)
+- github.com/chromedp/chromedp for scraping Pokemon data.
+- github.com/gocolly/colly for additional data fetching.
 
 ## Installation & Run
--Clone the Repository
--Initialize Go Modules
--Generate pokedex.json (go run WebClawer.go)
--Start the Server (go run server.go)
--Run the Client (go run client.go)
+- Clone the Repository
+- Initialize Go Modules
+- Generate pokedex.json (go run WebClawer.go)
+- Start the Server (go run server.go)
+- Run the Client (go run client.go)
 
