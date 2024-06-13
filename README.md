@@ -11,16 +11,16 @@ PokeCat n PokeBat is a text-based Pokemon game written in Go. It features two ma
 
 ## Project Structure
 pokedex
-├── go.mod
-├── go.sum
-├── main.go
-├── client
-    └── client.go
-└── server
-   └── server.go
-   └── WebClawer.go
-   └──pokedex.json
-   └──player_pokemon.json
+- ├── go.mod
+- ├── go.sum
+- ├── main.go
+- ├── client
+    - └── client.go
+- └── server
+   - └── server.go
+   - └── WebClawer.go
+   - └──pokedex.json
+   - └──player_pokemon.json
 
 ## Features
 **PokeCat:** Capture Pokemons.
