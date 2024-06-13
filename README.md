@@ -23,9 +23,9 @@ pokedex
    - └──player_pokemon.json
 
 ## Features
-**PokeCat:** Capture Pokemons.
-**PokeBat:** Battle with captured Pokemons.
-**Persistence:** Save and load the game state using JSON files.
+- **PokeCat:** Capture Pokemons.
+- **PokeBat:** Battle with captured Pokemons.
+- **Persistence:** Save and load the game state using JSON files.
 
 ## Requirements
 - Go programming language (version 1.16+)
