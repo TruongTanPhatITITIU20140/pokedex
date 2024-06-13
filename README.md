@@ -35,7 +35,16 @@ pokedex
 ## Installation & Run
 - Clone the Repository
 - Initialize Go Modules
-- Generate pokedex.json (go run WebClawer.go)
-- Start the Server (go run server.go)
-- Run the Client (go run client.go)
+- Generate pokedex.json
+```
+go run WebClawer.go
+```
+- Start the Server
+```
+go run server.go
+```
+- Run the Client
+```
+go run client.go
+```
 
