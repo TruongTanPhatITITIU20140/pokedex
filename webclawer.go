@@ -14,25 +14,25 @@ import (
 	"github.com/gocolly/colly"     // Gói để lấy data
 )
 
-// // Định nghĩa struct
-// type Pokemon struct {
-// 	Name   string   `json:"name"`
-// 	Types  []string `json:"types"`
-// 	Number string   `json:"number"`
-// 	Stats  Stats    `json:"stats"`
-// 	Exp    string   `json:"exp"`
-// }
+// Định nghĩa struct
+type Pokemon struct {
+	Name   string   `json:"name"`
+	Types  []string `json:"types"`
+	Number string   `json:"number"`
+	Stats  Stats    `json:"stats"`
+	Exp    string   `json:"exp"`
+}
 
-// type Stats struct {
-// 	HP      int `json:"hp"`
-// 	Attack  int `json:"attack"`
-// 	Defense int `json:"defense"`
-// 	Speed   int `json:"speed"`
-// 	SpAtk   int `json:"sp_atk"`
-// 	SpDef   int `json:"sp_def"`
-// }
+type Stats struct {
+	HP      int `json:"hp"`
+	Attack  int `json:"attack"`
+	Defense int `json:"defense"`
+	Speed   int `json:"speed"`
+	SpAtk   int `json:"sp_atk"`
+	SpDef   int `json:"sp_def"`
+}
 
-func WebClawer() {
+func main() {
 	// Tạo context
 	ctx, cancel := chromedp.NewContext(context.Background())
 	defer cancel()
@@ -117,7 +117,7 @@ func WebClawer() {
 	}
 
 	// Viết dữ liệu vào file JSON
-	err = os.WriteFile("pokedex.json", pokemonJSON, 0644)
+	err = os.WriteFile("./server/pokedex.json", pokemonJSON, 0644)
 	if err != nil {
 		fmt.Println("Error writing JSON data to file:", err)
 		return
