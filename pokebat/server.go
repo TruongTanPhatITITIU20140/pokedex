@@ -8,6 +8,7 @@ import (
 	"math/rand"
 	"net"
 	"strings"
+	"time"
 )
 
 type Pokemon struct {
@@ -49,6 +50,8 @@ var elementalMultipliers = map[string]map[string]float64{
 	},
 }
 
+var autoBattle = false // Default to manual mode
+
 func main() {
 	// Load Pokémon data
 	file, err := ioutil.ReadFile("pokedex.json")
@@ -83,6 +86,21 @@ func main() {
 		}
 		players = append(players, player)
 		fmt.Printf("Player %d has joined.\n", len(players))
+	}
+
+	// Allow players to choose game mode
+	for _, player := range players {
+		player.Conn.Write([]byte("Choose game mode:\n1. Manual\n2. Automatic\nEnter your choice: "))
+		modeChoice := make([]byte, 1024)
+		n, err := player.Conn.Read(modeChoice)
+		if err != nil {
+			log.Printf("Failed to read game mode choice: %v", err)
+			continue
+		}
+		if strings.TrimSpace(string(modeChoice[:n])) == "2" {
+			autoBattle = true
+			break
+		}
 	}
 
 	// Assign names and let players choose Pokémons
@@ -150,47 +168,75 @@ func main() {
 
 	// Main game loop
 	for {
-		// Player's turn
-		for _, player := range []*Player{firstPlayer, secondPlayer} {
-			// Show active Pokémon and stats
-			player.Conn.Write([]byte(fmt.Sprintf("Active Pokémon: %v\n", player.Active)))
-			player.Conn.Write([]byte("Choose action:\n1. Attack\n2. Switch Pokémon\nEnter your choice: "))
-
-			choice := make([]byte, 1024)
-			n, err := player.Conn.Read(choice)
-			if err != nil {
-				log.Printf("Failed to read player choice: %v", err)
-				continue
-			}
-
-			switch strings.TrimSpace(string(choice[:n])) {
-			case "1":
-				damage := attack(player, secondPlayer, rand.Float64() < 0.5)
-				secondPlayer.Active.Stats.HP -= damage
-				player.Conn.Write([]byte(fmt.Sprintf("You dealt %d damage!\n", damage)))
-				secondPlayer.Conn.Write([]byte(fmt.Sprintf("You received %d damage!\n", damage)))
-
-				// Check if opponent's Pokémon fainted
-				if secondPlayer.Active.Stats.HP <= 0 {
-					secondPlayer.Conn.Write([]byte("Your Pokémon fainted!\n"))
-					if checkAllPokemonFainted(secondPlayer) {
-						player.Conn.Write([]byte("You win!\n"))
-						secondPlayer.Conn.Write([]byte("You lose!\n"))
-						return
-					}
-					secondPlayer.Conn.Write([]byte("Switch to another Pokémon.\n"))
-					// Force switch Pokémon
-					switchPokemon(secondPlayer)
-				}
-			case "2":
-				switchPokemon(player)
-			default:
-				player.Conn.Write([]byte("Invalid choice. Try again.\n"))
-			}
-
-			// Switch turns
-			firstPlayer, secondPlayer = secondPlayer, firstPlayer
+		if autoBattle {
+			autoBattleTurn(firstPlayer, secondPlayer)
+		} else {
+			playerTurn(firstPlayer, secondPlayer)
+			playerTurn(secondPlayer, firstPlayer)
 		}
+	}
+}
+
+func autoBattleTurn(firstPlayer *Player, secondPlayer *Player) {
+	for _, player := range []*Player{firstPlayer, secondPlayer} {
+		if player.Active.Stats.HP <= 0 {
+			switchPokemon(player)
+			continue
+		}
+
+		damage := attack(player, secondPlayer, rand.Float64() < 0.5)
+		secondPlayer.Active.Stats.HP -= damage
+		fmt.Printf("%s dealt %d damage!\n", player.Name, damage)
+		player.Conn.Write([]byte(fmt.Sprintf("You dealt %d damage!\n", damage)))
+		secondPlayer.Conn.Write([]byte(fmt.Sprintf("You received %d damage!\n", damage)))
+
+		if secondPlayer.Active.Stats.HP <= 0 {
+			secondPlayer.Conn.Write([]byte("Your Pokémon fainted!\n"))
+			if checkAllPokemonFainted(secondPlayer) {
+				player.Conn.Write([]byte("You win!\n"))
+				secondPlayer.Conn.Write([]byte("You lose!\n"))
+				return
+			}
+			switchPokemon(secondPlayer)
+		}
+
+		// Switch turns
+		firstPlayer, secondPlayer = secondPlayer, firstPlayer
+		time.Sleep(1 * time.Second) // Add delay to simulate turn
+	}
+}
+
+func playerTurn(attacker *Player, defender *Player) {
+	attacker.Conn.Write([]byte(fmt.Sprintf("Active Pokémon: %v\n", attacker.Active)))
+	attacker.Conn.Write([]byte("Choose action:\n1. Attack\n2. Switch Pokémon\nEnter your choice: "))
+
+	choice := make([]byte, 1024)
+	n, err := attacker.Conn.Read(choice)
+	if err != nil {
+		log.Printf("Failed to read player choice: %v", err)
+		return
+	}
+
+	switch strings.TrimSpace(string(choice[:n])) {
+	case "1":
+		damage := attack(attacker, defender, rand.Float64() < 0.5)
+		defender.Active.Stats.HP -= damage
+		attacker.Conn.Write([]byte(fmt.Sprintf("You dealt %d damage!\n", damage)))
+		defender.Conn.Write([]byte(fmt.Sprintf("You received %d damage!\n", damage)))
+
+		if defender.Active.Stats.HP <= 0 {
+			defender.Conn.Write([]byte("Your Pokémon fainted!\n"))
+			if checkAllPokemonFainted(defender) {
+				attacker.Conn.Write([]byte("You win!\n"))
+				defender.Conn.Write([]byte("You lose!\n"))
+				return
+			}
+			switchPokemon(defender)
+		}
+	case "2":
+		switchPokemon(attacker)
+	default:
+		attacker.Conn.Write([]byte("Invalid choice. Try again.\n"))
 	}
 }
 

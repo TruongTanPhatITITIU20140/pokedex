@@ -15,8 +15,8 @@ import (
 
 // Configuration constants
 const (
-	GridSize           = 2000 // Grid size of the world
-	MaxPokemonPerBatch = 50    // Max number of Pokémon generated each time
+	GridSize           = 10 // Grid size of the world
+	MaxPokemonPerBatch = 10    // Max number of Pokémon generated each time
 	PokemonDisappear   = 300   // Time in seconds, after which a Pokémon disappears if not caught (60 seconds = 1 minute)
 	MaxPokemonCapacity = 200  // Maximum number of Pokémon a player can hold
 )
@@ -186,41 +186,54 @@ func handlePlayer(conn net.Conn, pokemonChannel <-chan Pokemon) {
 
 	scanner := bufio.NewScanner(conn)
 	for {
-		player.Conn.Write([]byte("Choose your step: [u][d][r][l] or 'check' to see your Pokémon\n"))
+		player.Conn.Write([]byte("Choose your step: [s][w][a][d] or 'check' to see your Pokémon or 'auto <duration>' to enable auto mode\n"))
 
 		if !scanner.Scan() {
 			fmt.Printf("Player disconnected\n")
 			break
 		}
 		command := strings.TrimSpace(scanner.Text())
+		args := strings.Split(command, " ")
 
-		switch command {
-		case "s":
-			if player.Y > 0 {
-				player.Y--
+		if len(args) > 0 {
+			switch args[0] {
+			case "s":
+				if player.Y > 0 {
+					player.Y--
+				}
+			case "w":
+				if player.Y < GridSize-1 {
+					player.Y++
+				}
+			case "a":
+				if player.X > 0 {
+					player.X--
+				}
+			case "d":
+				if player.X < GridSize-1 {
+					player.X++
+				}
+			case "check":
+				player.Conn.Write([]byte("Your Pokémon:\n"))
+				for _, p := range player.Pokemons {
+					player.Conn.Write([]byte(fmt.Sprintf("- %s\n", p.Name)))
+				}
+				player.Conn.Write([]byte("End of Pokémon list\n"))
+				continue
+			case "auto":
+				if len(args) > 1 {
+					duration, err := time.ParseDuration(args[1])
+					if err != nil {
+						player.Conn.Write([]byte("Invalid duration format. Use something like '2m' for 2 minutes.\n"))
+						continue
+					}
+					go autoCatch(player, duration)
+				}
+				continue
+			default:
+				player.Conn.Write([]byte("Invalid command. Try again.\n"))
+				continue
 			}
-		case "w":
-			if player.Y < GridSize-1 {
-				player.Y++
-			}
-		case "a":
-			if player.X > 0 {
-				player.X--
-			}
-		case "d":
-			if player.X < GridSize-1 {
-				player.X++
-			}
-		case "check":
-			player.Conn.Write([]byte("Your Pokémon:\n"))
-			for _, p := range player.Pokemons {
-				player.Conn.Write([]byte(fmt.Sprintf("- %s\n", p.Name)))
-			}
-			player.Conn.Write([]byte("End of Pokémon list\n"))
-			continue
-		default:
-			player.Conn.Write([]byte("Invalid command. Try again.\n"))
-			continue
 		}
 
 		// Check if there is a Pokémon at the player's new position
@@ -245,6 +258,46 @@ func handlePlayer(conn net.Conn, pokemonChannel <-chan Pokemon) {
 		}
 		player.Conn.Write([]byte(fmt.Sprintf("Updated position: (%d, %d)\n", player.X, player.Y)))
 	}
+}
+
+// autoCatch moves the player automatically for the specified duration and catches Pokémon when encountered
+func autoCatch(player *Player, duration time.Duration) {
+	stopTime := time.Now().Add(duration)
+	for time.Now().Before(stopTime) {
+		direction := rand.Intn(4)
+		switch direction {
+		case 0:
+			if player.X < GridSize-1 {
+				player.X++
+			}
+		case 1:
+			if player.X > 0 {
+				player.X--
+			}
+		case 2:
+			if player.Y < GridSize-1 {
+				player.Y++
+			}
+		case 3:
+			if player.Y > 0 {
+				player.Y--
+			}
+		}
+
+		mutex.Lock()
+		key := fmt.Sprintf("%d,%d", player.X, player.Y)
+		if pokemon, exists := pokemonMap[key]; exists && time.Now().Before(pokemon.DisappearTime) {
+			player.Pokemons = append(player.Pokemons, &pokemon)
+			fmt.Printf("Player caught Pokémon: %s\n", pokemon.Name)
+			player.Conn.Write([]byte(fmt.Sprintf("You caught Pokémon: %s\n", pokemon.Name)))
+			delete(pokemonMap, key)
+		}
+		mutex.Unlock()
+
+		player.Conn.Write([]byte(fmt.Sprintf("Auto mode: Moved to (%d, %d)\n", player.X, player.Y)))
+		time.Sleep(time.Second)
+	}
+	player.Conn.Write([]byte("Auto mode ended.\n"))
 }
 
 // parsePosition parses a position key into X and Y coordinates

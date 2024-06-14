@@ -10,11 +10,10 @@ import (
 	"strings"
 	"time"
 
-	"github.com/chromedp/chromedp" //gói để điều khiển trình duyệt Chrome không có giao diện (headless)
-	"github.com/gocolly/colly" //Gói để lấy data
+	"github.com/chromedp/chromedp"
+	"github.com/gocolly/colly"
 )
 
-// Chỗ này để định nghĩa struct
 
 type Pokemon struct {
 	Name   string   `json:"name"`
@@ -67,7 +66,6 @@ func fetchPokemonData(ctx context.Context, i int) (Pokemon, error) {
 }
 
 func main() {
-	// Tạo context với thời gian timeout dài hơn
 	ctx, cancel := chromedp.NewContext(context.Background())
 	defer cancel()
 
@@ -76,7 +74,7 @@ func main() {
 
 	var pokemonList []Pokemon
 
-	for i := 1; i <= 150; i++ {
+	for i := 1; i <= 640; i++ {
 		var pokemon Pokemon
 		var err error
 
@@ -86,18 +84,17 @@ func main() {
 				break
 			}
 			log.Printf("Retry %d for Pokemon Number %d: %v", retry+1, i, err)
-			time.Sleep(2 * time.Second) // Chờ một chút trước khi thử lại
+			time.Sleep(2 * time.Second)
 		}
 
 		if err != nil {
-			log.Fatalf("Failed to extract data for Number %d: %v", i, err)
+			log.Fatalf("Failed to extract data for pokemon number %d: %v", i, err)
 		}
 
 		pokemonList = append(pokemonList, pokemon)
-		fmt.Printf("Crawled data for Pokemon Number %d\n", i)
+		fmt.Printf("Data for Pokemon Number %d\n", i)
 	}
 
-	// Tạo collector mới
 	c := colly.NewCollector(
 		colly.AllowedDomains("bulbapedia.bulbagarden.net"),
 	)
@@ -106,8 +103,8 @@ func main() {
 
 	c.OnHTML("table.roundy tbody tr:not(:first-child)", func(e *colly.HTMLElement) {
 		Number := strings.Trim(e.ChildText("td:nth-child(1)"), "\n ")
-		exp := strings.Trim(e.ChildText("td:nth-child(4)"), "\n ") // Cột exp điều chỉnh đúng
-		Number = strings.TrimLeft(Number, "0") // Bỏ số 0
+		exp := strings.Trim(e.ChildText("td:nth-child(4)"), "\n ")
+		Number = strings.TrimLeft(Number, "0")
 
 		if Number != "" && exp != "" {
 			expMap[Number] = exp
@@ -135,7 +132,7 @@ func main() {
 	err = os.WriteFile("./pokebat/pokedex.json", pokemonJSON, 0644)
 	err = os.WriteFile("./pokecat/pokedex.json", pokemonJSON, 0644)
 	if err != nil {
-		fmt.Println("Error writing JSON data to file:", err)
+		fmt.Println("Error writing JSON data:", err)
 		return
 	}
 	fmt.Println("Pokemon data saved to pokedex.json")
