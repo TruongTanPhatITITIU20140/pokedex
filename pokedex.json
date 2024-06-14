@@ -1,0 +1,2469 @@
+[
+    {
+        "name": "Bulbasaur",
+        "types": [
+            "grass",
+            "poison"
+        ],
+        "number": "1",
+        "stats": {
+            "hp": 45,
+            "attack": 49,
+            "defense": 49,
+            "speed": 45,
+            "sp_atk": 65,
+            "sp_def": 65
+        },
+        "exp": "64"
+    },
+    {
+        "name": "Ivysaur",
+        "types": [
+            "grass",
+            "poison"
+        ],
+        "number": "2",
+        "stats": {
+            "hp": 60,
+            "attack": 62,
+            "defense": 63,
+            "speed": 60,
+            "sp_atk": 80,
+            "sp_def": 80
+        },
+        "exp": "142"
+    },
+    {
+        "name": "Venusaur",
+        "types": [
+            "grass",
+            "poison"
+        ],
+        "number": "3",
+        "stats": {
+            "hp": 80,
+            "attack": 82,
+            "defense": 83,
+            "speed": 80,
+            "sp_atk": 100,
+            "sp_def": 100
+        },
+        "exp": "263"
+    },
+    {
+        "name": "Charmander",
+        "types": [
+            "fire"
+        ],
+        "number": "4",
+        "stats": {
+            "hp": 39,
+            "attack": 52,
+            "defense": 43,
+            "speed": 65,
+            "sp_atk": 60,
+            "sp_def": 50
+        },
+        "exp": "62"
+    },
+    {
+        "name": "Charmeleon",
+        "types": [
+            "fire"
+        ],
+        "number": "5",
+        "stats": {
+            "hp": 58,
+            "attack": 64,
+            "defense": 58,
+            "speed": 80,
+            "sp_atk": 80,
+            "sp_def": 65
+        },
+        "exp": "142"
+    },
+    {
+        "name": "Charizard",
+        "types": [
+            "fire",
+            "flying"
+        ],
+        "number": "6",
+        "stats": {
+            "hp": 78,
+            "attack": 84,
+            "defense": 78,
+            "speed": 100,
+            "sp_atk": 109,
+            "sp_def": 85
+        },
+        "exp": "267"
+    },
+    {
+        "name": "Squirtle",
+        "types": [
+            "water"
+        ],
+        "number": "7",
+        "stats": {
+            "hp": 44,
+            "attack": 48,
+            "defense": 65,
+            "speed": 43,
+            "sp_atk": 50,
+            "sp_def": 64
+        },
+        "exp": "63"
+    },
+    {
+        "name": "Wartortle",
+        "types": [
+            "water"
+        ],
+        "number": "8",
+        "stats": {
+            "hp": 59,
+            "attack": 63,
+            "defense": 80,
+            "speed": 58,
+            "sp_atk": 65,
+            "sp_def": 80
+        },
+        "exp": "142"
+    },
+    {
+        "name": "Blastoise",
+        "types": [
+            "water"
+        ],
+        "number": "9",
+        "stats": {
+            "hp": 79,
+            "attack": 83,
+            "defense": 100,
+            "speed": 78,
+            "sp_atk": 85,
+            "sp_def": 105
+        },
+        "exp": "265"
+    },
+    {
+        "name": "Caterpie",
+        "types": [
+            "bug"
+        ],
+        "number": "10",
+        "stats": {
+            "hp": 45,
+            "attack": 30,
+            "defense": 35,
+            "speed": 45,
+            "sp_atk": 20,
+            "sp_def": 20
+        },
+        "exp": "39"
+    },
+    {
+        "name": "Metapod",
+        "types": [
+            "bug"
+        ],
+        "number": "11",
+        "stats": {
+            "hp": 50,
+            "attack": 20,
+            "defense": 55,
+            "speed": 30,
+            "sp_atk": 25,
+            "sp_def": 25
+        },
+        "exp": "72"
+    },
+    {
+        "name": "Butterfree",
+        "types": [
+            "bug",
+            "flying"
+        ],
+        "number": "12",
+        "stats": {
+            "hp": 60,
+            "attack": 45,
+            "defense": 50,
+            "speed": 70,
+            "sp_atk": 90,
+            "sp_def": 80
+        },
+        "exp": "198"
+    },
+    {
+        "name": "Weedle",
+        "types": [
+            "bug",
+            "poison"
+        ],
+        "number": "13",
+        "stats": {
+            "hp": 40,
+            "attack": 35,
+            "defense": 30,
+            "speed": 50,
+            "sp_atk": 20,
+            "sp_def": 20
+        },
+        "exp": "39"
+    },
+    {
+        "name": "Kakuna",
+        "types": [
+            "bug",
+            "poison"
+        ],
+        "number": "14",
+        "stats": {
+            "hp": 45,
+            "attack": 25,
+            "defense": 50,
+            "speed": 35,
+            "sp_atk": 25,
+            "sp_def": 25
+        },
+        "exp": "72"
+    },
+    {
+        "name": "Beedrill",
+        "types": [
+            "bug",
+            "poison"
+        ],
+        "number": "15",
+        "stats": {
+            "hp": 65,
+            "attack": 90,
+            "defense": 40,
+            "speed": 75,
+            "sp_atk": 45,
+            "sp_def": 80
+        },
+        "exp": "198"
+    },
+    {
+        "name": "Pidgey",
+        "types": [
+            "flying",
+            "normal"
+        ],
+        "number": "16",
+        "stats": {
+            "hp": 40,
+            "attack": 45,
+            "defense": 40,
+            "speed": 56,
+            "sp_atk": 35,
+            "sp_def": 35
+        },
+        "exp": "50"
+    },
+    {
+        "name": "Pidgeotto",
+        "types": [
+            "flying",
+            "normal"
+        ],
+        "number": "17",
+        "stats": {
+            "hp": 63,
+            "attack": 60,
+            "defense": 55,
+            "speed": 71,
+            "sp_atk": 50,
+            "sp_def": 50
+        },
+        "exp": "122"
+    },
+    {
+        "name": "Pidgeot",
+        "types": [
+            "flying",
+            "normal"
+        ],
+        "number": "18",
+        "stats": {
+            "hp": 83,
+            "attack": 80,
+            "defense": 75,
+            "speed": 101,
+            "sp_atk": 70,
+            "sp_def": 70
+        },
+        "exp": "240"
+    },
+    {
+        "name": "Rattata",
+        "types": [
+            "normal"
+        ],
+        "number": "19",
+        "stats": {
+            "hp": 30,
+            "attack": 56,
+            "defense": 35,
+            "speed": 72,
+            "sp_atk": 25,
+            "sp_def": 35
+        },
+        "exp": "51"
+    },
+    {
+        "name": "Raticate",
+        "types": [
+            "normal"
+        ],
+        "number": "20",
+        "stats": {
+            "hp": 55,
+            "attack": 81,
+            "defense": 60,
+            "speed": 97,
+            "sp_atk": 50,
+            "sp_def": 70
+        },
+        "exp": "145"
+    },
+    {
+        "name": "Spearow",
+        "types": [
+            "flying",
+            "normal"
+        ],
+        "number": "21",
+        "stats": {
+            "hp": 40,
+            "attack": 60,
+            "defense": 30,
+            "speed": 70,
+            "sp_atk": 31,
+            "sp_def": 31
+        },
+        "exp": "52"
+    },
+    {
+        "name": "Fearow",
+        "types": [
+            "flying",
+            "normal"
+        ],
+        "number": "22",
+        "stats": {
+            "hp": 65,
+            "attack": 90,
+            "defense": 65,
+            "speed": 100,
+            "sp_atk": 61,
+            "sp_def": 61
+        },
+        "exp": "155"
+    },
+    {
+        "name": "Ekans",
+        "types": [
+            "poison"
+        ],
+        "number": "23",
+        "stats": {
+            "hp": 35,
+            "attack": 60,
+            "defense": 44,
+            "speed": 55,
+            "sp_atk": 40,
+            "sp_def": 54
+        },
+        "exp": "58"
+    },
+    {
+        "name": "Arbok",
+        "types": [
+            "poison"
+        ],
+        "number": "24",
+        "stats": {
+            "hp": 60,
+            "attack": 85,
+            "defense": 69,
+            "speed": 80,
+            "sp_atk": 65,
+            "sp_def": 79
+        },
+        "exp": "157"
+    },
+    {
+        "name": "Pikachu",
+        "types": [
+            "electric"
+        ],
+        "number": "25",
+        "stats": {
+            "hp": 35,
+            "attack": 55,
+            "defense": 40,
+            "speed": 90,
+            "sp_atk": 50,
+            "sp_def": 50
+        },
+        "exp": "112"
+    },
+    {
+        "name": "Raichu",
+        "types": [
+            "electric"
+        ],
+        "number": "26",
+        "stats": {
+            "hp": 60,
+            "attack": 90,
+            "defense": 55,
+            "speed": 110,
+            "sp_atk": 90,
+            "sp_def": 80
+        },
+        "exp": "243"
+    },
+    {
+        "name": "Sandshrew",
+        "types": [
+            "ground"
+        ],
+        "number": "27",
+        "stats": {
+            "hp": 50,
+            "attack": 75,
+            "defense": 85,
+            "speed": 40,
+            "sp_atk": 20,
+            "sp_def": 30
+        },
+        "exp": "60"
+    },
+    {
+        "name": "Sandslash",
+        "types": [
+            "ground"
+        ],
+        "number": "28",
+        "stats": {
+            "hp": 75,
+            "attack": 100,
+            "defense": 110,
+            "speed": 65,
+            "sp_atk": 45,
+            "sp_def": 55
+        },
+        "exp": "158"
+    },
+    {
+        "name": "Nidoran ♀",
+        "types": [
+            "poison"
+        ],
+        "number": "29",
+        "stats": {
+            "hp": 55,
+            "attack": 47,
+            "defense": 52,
+            "speed": 41,
+            "sp_atk": 40,
+            "sp_def": 40
+        },
+        "exp": "55"
+    },
+    {
+        "name": "Nidorina",
+        "types": [
+            "poison"
+        ],
+        "number": "30",
+        "stats": {
+            "hp": 70,
+            "attack": 62,
+            "defense": 67,
+            "speed": 56,
+            "sp_atk": 55,
+            "sp_def": 55
+        },
+        "exp": "128"
+    },
+    {
+        "name": "Nidoqueen",
+        "types": [
+            "ground",
+            "poison"
+        ],
+        "number": "31",
+        "stats": {
+            "hp": 90,
+            "attack": 92,
+            "defense": 87,
+            "speed": 76,
+            "sp_atk": 75,
+            "sp_def": 85
+        },
+        "exp": "253"
+    },
+    {
+        "name": "Nidoran ♂",
+        "types": [
+            "poison"
+        ],
+        "number": "32",
+        "stats": {
+            "hp": 46,
+            "attack": 57,
+            "defense": 40,
+            "speed": 50,
+            "sp_atk": 40,
+            "sp_def": 40
+        },
+        "exp": "55"
+    },
+    {
+        "name": "Nidorino",
+        "types": [
+            "poison"
+        ],
+        "number": "33",
+        "stats": {
+            "hp": 61,
+            "attack": 72,
+            "defense": 57,
+            "speed": 65,
+            "sp_atk": 55,
+            "sp_def": 55
+        },
+        "exp": "128"
+    },
+    {
+        "name": "Nidoking",
+        "types": [
+            "ground",
+            "poison"
+        ],
+        "number": "34",
+        "stats": {
+            "hp": 81,
+            "attack": 102,
+            "defense": 77,
+            "speed": 85,
+            "sp_atk": 85,
+            "sp_def": 75
+        },
+        "exp": "253"
+    },
+    {
+        "name": "Clefairy",
+        "types": [
+            "fairy"
+        ],
+        "number": "35",
+        "stats": {
+            "hp": 70,
+            "attack": 45,
+            "defense": 48,
+            "speed": 35,
+            "sp_atk": 60,
+            "sp_def": 65
+        },
+        "exp": "113"
+    },
+    {
+        "name": "Clefable",
+        "types": [
+            "fairy"
+        ],
+        "number": "36",
+        "stats": {
+            "hp": 95,
+            "attack": 70,
+            "defense": 73,
+            "speed": 60,
+            "sp_atk": 95,
+            "sp_def": 90
+        },
+        "exp": "242"
+    },
+    {
+        "name": "Vulpix",
+        "types": [
+            "fire"
+        ],
+        "number": "37",
+        "stats": {
+            "hp": 38,
+            "attack": 41,
+            "defense": 40,
+            "speed": 65,
+            "sp_atk": 50,
+            "sp_def": 65
+        },
+        "exp": "60"
+    },
+    {
+        "name": "Ninetales",
+        "types": [
+            "fire"
+        ],
+        "number": "38",
+        "stats": {
+            "hp": 73,
+            "attack": 76,
+            "defense": 75,
+            "speed": 100,
+            "sp_atk": 81,
+            "sp_def": 100
+        },
+        "exp": "177"
+    },
+    {
+        "name": "Jigglypuff",
+        "types": [
+            "fairy",
+            "normal"
+        ],
+        "number": "39",
+        "stats": {
+            "hp": 115,
+            "attack": 45,
+            "defense": 20,
+            "speed": 20,
+            "sp_atk": 45,
+            "sp_def": 25
+        },
+        "exp": "95"
+    },
+    {
+        "name": "Wigglytuff",
+        "types": [
+            "fairy",
+            "normal"
+        ],
+        "number": "40",
+        "stats": {
+            "hp": 140,
+            "attack": 70,
+            "defense": 45,
+            "speed": 45,
+            "sp_atk": 85,
+            "sp_def": 50
+        },
+        "exp": "218"
+    },
+    {
+        "name": "Zubat",
+        "types": [
+            "poison",
+            "flying"
+        ],
+        "number": "41",
+        "stats": {
+            "hp": 40,
+            "attack": 45,
+            "defense": 35,
+            "speed": 55,
+            "sp_atk": 30,
+            "sp_def": 40
+        },
+        "exp": "49"
+    },
+    {
+        "name": "Golbat",
+        "types": [
+            "poison",
+            "flying"
+        ],
+        "number": "42",
+        "stats": {
+            "hp": 75,
+            "attack": 80,
+            "defense": 70,
+            "speed": 90,
+            "sp_atk": 65,
+            "sp_def": 75
+        },
+        "exp": "159"
+    },
+    {
+        "name": "Oddish",
+        "types": [
+            "grass",
+            "poison"
+        ],
+        "number": "43",
+        "stats": {
+            "hp": 45,
+            "attack": 50,
+            "defense": 55,
+            "speed": 30,
+            "sp_atk": 75,
+            "sp_def": 65
+        },
+        "exp": "64"
+    },
+    {
+        "name": "Gloom",
+        "types": [
+            "grass",
+            "poison"
+        ],
+        "number": "44",
+        "stats": {
+            "hp": 60,
+            "attack": 65,
+            "defense": 70,
+            "speed": 40,
+            "sp_atk": 85,
+            "sp_def": 75
+        },
+        "exp": "138"
+    },
+    {
+        "name": "Vileplume",
+        "types": [
+            "grass",
+            "poison"
+        ],
+        "number": "45",
+        "stats": {
+            "hp": 75,
+            "attack": 80,
+            "defense": 85,
+            "speed": 50,
+            "sp_atk": 110,
+            "sp_def": 90
+        },
+        "exp": "245"
+    },
+    {
+        "name": "Paras",
+        "types": [
+            "grass",
+            "bug"
+        ],
+        "number": "46",
+        "stats": {
+            "hp": 35,
+            "attack": 70,
+            "defense": 55,
+            "speed": 25,
+            "sp_atk": 45,
+            "sp_def": 55
+        },
+        "exp": "57"
+    },
+    {
+        "name": "Parasect",
+        "types": [
+            "grass",
+            "bug"
+        ],
+        "number": "47",
+        "stats": {
+            "hp": 60,
+            "attack": 95,
+            "defense": 80,
+            "speed": 30,
+            "sp_atk": 60,
+            "sp_def": 80
+        },
+        "exp": "142"
+    },
+    {
+        "name": "Venonat",
+        "types": [
+            "bug",
+            "poison"
+        ],
+        "number": "48",
+        "stats": {
+            "hp": 60,
+            "attack": 55,
+            "defense": 50,
+            "speed": 45,
+            "sp_atk": 40,
+            "sp_def": 55
+        },
+        "exp": "61"
+    },
+    {
+        "name": "Venomoth",
+        "types": [
+            "bug",
+            "poison"
+        ],
+        "number": "49",
+        "stats": {
+            "hp": 70,
+            "attack": 65,
+            "defense": 60,
+            "speed": 90,
+            "sp_atk": 90,
+            "sp_def": 75
+        },
+        "exp": "158"
+    },
+    {
+        "name": "Diglett",
+        "types": [
+            "ground"
+        ],
+        "number": "50",
+        "stats": {
+            "hp": 10,
+            "attack": 55,
+            "defense": 25,
+            "speed": 95,
+            "sp_atk": 35,
+            "sp_def": 45
+        },
+        "exp": "53"
+    },
+    {
+        "name": "Dugtrio",
+        "types": [
+            "ground"
+        ],
+        "number": "51",
+        "stats": {
+            "hp": 35,
+            "attack": 80,
+            "defense": 50,
+            "speed": 120,
+            "sp_atk": 50,
+            "sp_def": 70
+        },
+        "exp": "149"
+    },
+    {
+        "name": "Meowth",
+        "types": [
+            "normal"
+        ],
+        "number": "52",
+        "stats": {
+            "hp": 40,
+            "attack": 45,
+            "defense": 35,
+            "speed": 90,
+            "sp_atk": 40,
+            "sp_def": 40
+        },
+        "exp": "58"
+    },
+    {
+        "name": "Persian",
+        "types": [
+            "normal"
+        ],
+        "number": "53",
+        "stats": {
+            "hp": 65,
+            "attack": 70,
+            "defense": 60,
+            "speed": 115,
+            "sp_atk": 65,
+            "sp_def": 65
+        },
+        "exp": "154"
+    },
+    {
+        "name": "Psyduck",
+        "types": [
+            "water"
+        ],
+        "number": "54",
+        "stats": {
+            "hp": 50,
+            "attack": 52,
+            "defense": 48,
+            "speed": 55,
+            "sp_atk": 65,
+            "sp_def": 50
+        },
+        "exp": "64"
+    },
+    {
+        "name": "Golduck",
+        "types": [
+            "water"
+        ],
+        "number": "55",
+        "stats": {
+            "hp": 80,
+            "attack": 82,
+            "defense": 78,
+            "speed": 85,
+            "sp_atk": 95,
+            "sp_def": 80
+        },
+        "exp": "175"
+    },
+    {
+        "name": "Mankey",
+        "types": [
+            "fighting"
+        ],
+        "number": "56",
+        "stats": {
+            "hp": 40,
+            "attack": 80,
+            "defense": 35,
+            "speed": 70,
+            "sp_atk": 35,
+            "sp_def": 45
+        },
+        "exp": "61"
+    },
+    {
+        "name": "Primeape",
+        "types": [
+            "fighting"
+        ],
+        "number": "57",
+        "stats": {
+            "hp": 65,
+            "attack": 105,
+            "defense": 60,
+            "speed": 95,
+            "sp_atk": 60,
+            "sp_def": 70
+        },
+        "exp": "159"
+    },
+    {
+        "name": "Growlithe",
+        "types": [
+            "fire"
+        ],
+        "number": "58",
+        "stats": {
+            "hp": 55,
+            "attack": 70,
+            "defense": 45,
+            "speed": 60,
+            "sp_atk": 70,
+            "sp_def": 50
+        },
+        "exp": "70"
+    },
+    {
+        "name": "Arcanine",
+        "types": [
+            "fire"
+        ],
+        "number": "59",
+        "stats": {
+            "hp": 90,
+            "attack": 110,
+            "defense": 80,
+            "speed": 95,
+            "sp_atk": 100,
+            "sp_def": 80
+        },
+        "exp": "194"
+    },
+    {
+        "name": "Poliwag",
+        "types": [
+            "water"
+        ],
+        "number": "60",
+        "stats": {
+            "hp": 40,
+            "attack": 50,
+            "defense": 40,
+            "speed": 90,
+            "sp_atk": 40,
+            "sp_def": 40
+        },
+        "exp": "60"
+    },
+    {
+        "name": "Poliwhirl",
+        "types": [
+            "water"
+        ],
+        "number": "61",
+        "stats": {
+            "hp": 65,
+            "attack": 65,
+            "defense": 65,
+            "speed": 90,
+            "sp_atk": 50,
+            "sp_def": 50
+        },
+        "exp": "135"
+    },
+    {
+        "name": "Poliwrath",
+        "types": [
+            "water",
+            "fighting"
+        ],
+        "number": "62",
+        "stats": {
+            "hp": 90,
+            "attack": 95,
+            "defense": 95,
+            "speed": 70,
+            "sp_atk": 70,
+            "sp_def": 90
+        },
+        "exp": "255"
+    },
+    {
+        "name": "Abra",
+        "types": [
+            "psychic"
+        ],
+        "number": "63",
+        "stats": {
+            "hp": 25,
+            "attack": 20,
+            "defense": 15,
+            "speed": 90,
+            "sp_atk": 105,
+            "sp_def": 55
+        },
+        "exp": "62"
+    },
+    {
+        "name": "Kadabra",
+        "types": [
+            "psychic"
+        ],
+        "number": "64",
+        "stats": {
+            "hp": 40,
+            "attack": 35,
+            "defense": 30,
+            "speed": 105,
+            "sp_atk": 120,
+            "sp_def": 70
+        },
+        "exp": "140"
+    },
+    {
+        "name": "Alakazam",
+        "types": [
+            "psychic"
+        ],
+        "number": "65",
+        "stats": {
+            "hp": 55,
+            "attack": 50,
+            "defense": 45,
+            "speed": 120,
+            "sp_atk": 135,
+            "sp_def": 95
+        },
+        "exp": "250"
+    },
+    {
+        "name": "Machop",
+        "types": [
+            "fighting"
+        ],
+        "number": "66",
+        "stats": {
+            "hp": 70,
+            "attack": 80,
+            "defense": 50,
+            "speed": 35,
+            "sp_atk": 35,
+            "sp_def": 35
+        },
+        "exp": "61"
+    },
+    {
+        "name": "Machoke",
+        "types": [
+            "fighting"
+        ],
+        "number": "67",
+        "stats": {
+            "hp": 80,
+            "attack": 100,
+            "defense": 70,
+            "speed": 45,
+            "sp_atk": 50,
+            "sp_def": 60
+        },
+        "exp": "142"
+    },
+    {
+        "name": "Machamp",
+        "types": [
+            "fighting"
+        ],
+        "number": "68",
+        "stats": {
+            "hp": 90,
+            "attack": 130,
+            "defense": 80,
+            "speed": 55,
+            "sp_atk": 65,
+            "sp_def": 85
+        },
+        "exp": "253"
+    },
+    {
+        "name": "Bellsprout",
+        "types": [
+            "grass",
+            "poison"
+        ],
+        "number": "69",
+        "stats": {
+            "hp": 50,
+            "attack": 75,
+            "defense": 35,
+            "speed": 40,
+            "sp_atk": 70,
+            "sp_def": 30
+        },
+        "exp": "60"
+    },
+    {
+        "name": "Weepinbell",
+        "types": [
+            "grass",
+            "poison"
+        ],
+        "number": "70",
+        "stats": {
+            "hp": 65,
+            "attack": 90,
+            "defense": 50,
+            "speed": 55,
+            "sp_atk": 85,
+            "sp_def": 45
+        },
+        "exp": "137"
+    },
+    {
+        "name": "Victreebel",
+        "types": [
+            "grass",
+            "poison"
+        ],
+        "number": "71",
+        "stats": {
+            "hp": 80,
+            "attack": 105,
+            "defense": 65,
+            "speed": 70,
+            "sp_atk": 100,
+            "sp_def": 70
+        },
+        "exp": "245"
+    },
+    {
+        "name": "Tentacool",
+        "types": [
+            "water",
+            "poison"
+        ],
+        "number": "72",
+        "stats": {
+            "hp": 40,
+            "attack": 40,
+            "defense": 35,
+            "speed": 70,
+            "sp_atk": 50,
+            "sp_def": 100
+        },
+        "exp": "67"
+    },
+    {
+        "name": "Tentacruel",
+        "types": [
+            "water",
+            "poison"
+        ],
+        "number": "73",
+        "stats": {
+            "hp": 80,
+            "attack": 70,
+            "defense": 65,
+            "speed": 100,
+            "sp_atk": 80,
+            "sp_def": 120
+        },
+        "exp": "180"
+    },
+    {
+        "name": "Geodude",
+        "types": [
+            "rock",
+            "ground"
+        ],
+        "number": "74",
+        "stats": {
+            "hp": 40,
+            "attack": 80,
+            "defense": 100,
+            "speed": 20,
+            "sp_atk": 30,
+            "sp_def": 30
+        },
+        "exp": "60"
+    },
+    {
+        "name": "Graveler",
+        "types": [
+            "rock",
+            "ground"
+        ],
+        "number": "75",
+        "stats": {
+            "hp": 55,
+            "attack": 95,
+            "defense": 115,
+            "speed": 35,
+            "sp_atk": 45,
+            "sp_def": 45
+        },
+        "exp": "137"
+    },
+    {
+        "name": "Golem",
+        "types": [
+            "rock",
+            "ground"
+        ],
+        "number": "76",
+        "stats": {
+            "hp": 80,
+            "attack": 120,
+            "defense": 130,
+            "speed": 45,
+            "sp_atk": 55,
+            "sp_def": 65
+        },
+        "exp": "248"
+    },
+    {
+        "name": "Ponyta",
+        "types": [
+            "fire"
+        ],
+        "number": "77",
+        "stats": {
+            "hp": 50,
+            "attack": 85,
+            "defense": 55,
+            "speed": 90,
+            "sp_atk": 65,
+            "sp_def": 65
+        },
+        "exp": "82"
+    },
+    {
+        "name": "Rapidash",
+        "types": [
+            "fire"
+        ],
+        "number": "78",
+        "stats": {
+            "hp": 65,
+            "attack": 100,
+            "defense": 70,
+            "speed": 105,
+            "sp_atk": 80,
+            "sp_def": 80
+        },
+        "exp": "175"
+    },
+    {
+        "name": "Slowpoke",
+        "types": [
+            "psychic",
+            "water"
+        ],
+        "number": "79",
+        "stats": {
+            "hp": 90,
+            "attack": 65,
+            "defense": 65,
+            "speed": 15,
+            "sp_atk": 40,
+            "sp_def": 40
+        },
+        "exp": "63"
+    },
+    {
+        "name": "Slowbro",
+        "types": [
+            "psychic",
+            "water"
+        ],
+        "number": "80",
+        "stats": {
+            "hp": 95,
+            "attack": 75,
+            "defense": 110,
+            "speed": 30,
+            "sp_atk": 100,
+            "sp_def": 80
+        },
+        "exp": "172"
+    },
+    {
+        "name": "Magnemite",
+        "types": [
+            "electric",
+            "steel"
+        ],
+        "number": "81",
+        "stats": {
+            "hp": 25,
+            "attack": 35,
+            "defense": 70,
+            "speed": 45,
+            "sp_atk": 95,
+            "sp_def": 55
+        },
+        "exp": "65"
+    },
+    {
+        "name": "Magneton",
+        "types": [
+            "electric",
+            "steel"
+        ],
+        "number": "82",
+        "stats": {
+            "hp": 50,
+            "attack": 60,
+            "defense": 95,
+            "speed": 70,
+            "sp_atk": 120,
+            "sp_def": 70
+        },
+        "exp": "163"
+    },
+    {
+        "name": "Farfetch'd",
+        "types": [
+            "flying",
+            "normal"
+        ],
+        "number": "83",
+        "stats": {
+            "hp": 52,
+            "attack": 65,
+            "defense": 55,
+            "speed": 60,
+            "sp_atk": 58,
+            "sp_def": 62
+        },
+        "exp": "132"
+    },
+    {
+        "name": "Doduo",
+        "types": [
+            "flying",
+            "normal"
+        ],
+        "number": "84",
+        "stats": {
+            "hp": 35,
+            "attack": 85,
+            "defense": 45,
+            "speed": 75,
+            "sp_atk": 35,
+            "sp_def": 35
+        },
+        "exp": "62"
+    },
+    {
+        "name": "Dodrio",
+        "types": [
+            "flying",
+            "normal"
+        ],
+        "number": "85",
+        "stats": {
+            "hp": 60,
+            "attack": 110,
+            "defense": 70,
+            "speed": 100,
+            "sp_atk": 60,
+            "sp_def": 60
+        },
+        "exp": "165"
+    },
+    {
+        "name": "Seel",
+        "types": [
+            "water"
+        ],
+        "number": "86",
+        "stats": {
+            "hp": 65,
+            "attack": 45,
+            "defense": 55,
+            "speed": 45,
+            "sp_atk": 45,
+            "sp_def": 70
+        },
+        "exp": "65"
+    },
+    {
+        "name": "Dewgong",
+        "types": [
+            "ice",
+            "water"
+        ],
+        "number": "87",
+        "stats": {
+            "hp": 90,
+            "attack": 70,
+            "defense": 80,
+            "speed": 70,
+            "sp_atk": 70,
+            "sp_def": 95
+        },
+        "exp": "166"
+    },
+    {
+        "name": "Grimer",
+        "types": [
+            "poison"
+        ],
+        "number": "88",
+        "stats": {
+            "hp": 80,
+            "attack": 80,
+            "defense": 50,
+            "speed": 25,
+            "sp_atk": 40,
+            "sp_def": 50
+        },
+        "exp": "65"
+    },
+    {
+        "name": "Muk",
+        "types": [
+            "poison"
+        ],
+        "number": "89",
+        "stats": {
+            "hp": 105,
+            "attack": 105,
+            "defense": 75,
+            "speed": 50,
+            "sp_atk": 65,
+            "sp_def": 100
+        },
+        "exp": "175"
+    },
+    {
+        "name": "Shellder",
+        "types": [
+            "water"
+        ],
+        "number": "90",
+        "stats": {
+            "hp": 30,
+            "attack": 65,
+            "defense": 100,
+            "speed": 40,
+            "sp_atk": 45,
+            "sp_def": 25
+        },
+        "exp": "61"
+    },
+    {
+        "name": "Cloyster",
+        "types": [
+            "ice",
+            "water"
+        ],
+        "number": "91",
+        "stats": {
+            "hp": 50,
+            "attack": 95,
+            "defense": 180,
+            "speed": 70,
+            "sp_atk": 85,
+            "sp_def": 45
+        },
+        "exp": "184"
+    },
+    {
+        "name": "Gastly",
+        "types": [
+            "ghost",
+            "poison"
+        ],
+        "number": "92",
+        "stats": {
+            "hp": 30,
+            "attack": 35,
+            "defense": 30,
+            "speed": 80,
+            "sp_atk": 100,
+            "sp_def": 35
+        },
+        "exp": "62"
+    },
+    {
+        "name": "Haunter",
+        "types": [
+            "ghost",
+            "poison"
+        ],
+        "number": "93",
+        "stats": {
+            "hp": 45,
+            "attack": 50,
+            "defense": 45,
+            "speed": 95,
+            "sp_atk": 115,
+            "sp_def": 55
+        },
+        "exp": "142"
+    },
+    {
+        "name": "Gengar",
+        "types": [
+            "ghost",
+            "poison"
+        ],
+        "number": "94",
+        "stats": {
+            "hp": 60,
+            "attack": 65,
+            "defense": 60,
+            "speed": 110,
+            "sp_atk": 130,
+            "sp_def": 75
+        },
+        "exp": "250"
+    },
+    {
+        "name": "Onix",
+        "types": [
+            "rock",
+            "ground"
+        ],
+        "number": "95",
+        "stats": {
+            "hp": 35,
+            "attack": 45,
+            "defense": 160,
+            "speed": 70,
+            "sp_atk": 30,
+            "sp_def": 45
+        },
+        "exp": "77"
+    },
+    {
+        "name": "Drowzee",
+        "types": [
+            "psychic"
+        ],
+        "number": "96",
+        "stats": {
+            "hp": 60,
+            "attack": 48,
+            "defense": 45,
+            "speed": 42,
+            "sp_atk": 43,
+            "sp_def": 90
+        },
+        "exp": "66"
+    },
+    {
+        "name": "Hypno",
+        "types": [
+            "psychic"
+        ],
+        "number": "97",
+        "stats": {
+            "hp": 85,
+            "attack": 73,
+            "defense": 70,
+            "speed": 67,
+            "sp_atk": 73,
+            "sp_def": 115
+        },
+        "exp": "169"
+    },
+    {
+        "name": "Krabby",
+        "types": [
+            "water"
+        ],
+        "number": "98",
+        "stats": {
+            "hp": 30,
+            "attack": 105,
+            "defense": 90,
+            "speed": 50,
+            "sp_atk": 25,
+            "sp_def": 25
+        },
+        "exp": "65"
+    },
+    {
+        "name": "Kingler",
+        "types": [
+            "water"
+        ],
+        "number": "99",
+        "stats": {
+            "hp": 55,
+            "attack": 130,
+            "defense": 115,
+            "speed": 75,
+            "sp_atk": 50,
+            "sp_def": 50
+        },
+        "exp": "166"
+    },
+    {
+        "name": "Voltorb",
+        "types": [
+            "electric"
+        ],
+        "number": "100",
+        "stats": {
+            "hp": 40,
+            "attack": 30,
+            "defense": 50,
+            "speed": 100,
+            "sp_atk": 55,
+            "sp_def": 55
+        },
+        "exp": "66"
+    },
+    {
+        "name": "Electrode",
+        "types": [
+            "electric"
+        ],
+        "number": "101",
+        "stats": {
+            "hp": 60,
+            "attack": 50,
+            "defense": 70,
+            "speed": 140,
+            "sp_atk": 80,
+            "sp_def": 80
+        },
+        "exp": "172"
+    },
+    {
+        "name": "Exeggcute",
+        "types": [
+            "psychic",
+            "grass"
+        ],
+        "number": "102",
+        "stats": {
+            "hp": 60,
+            "attack": 40,
+            "defense": 80,
+            "speed": 40,
+            "sp_atk": 60,
+            "sp_def": 45
+        },
+        "exp": "65"
+    },
+    {
+        "name": "Exeggutor",
+        "types": [
+            "psychic",
+            "grass"
+        ],
+        "number": "103",
+        "stats": {
+            "hp": 95,
+            "attack": 95,
+            "defense": 85,
+            "speed": 55,
+            "sp_atk": 125,
+            "sp_def": 65
+        },
+        "exp": "186"
+    },
+    {
+        "name": "Cubone",
+        "types": [
+            "ground"
+        ],
+        "number": "104",
+        "stats": {
+            "hp": 50,
+            "attack": 50,
+            "defense": 95,
+            "speed": 35,
+            "sp_atk": 40,
+            "sp_def": 50
+        },
+        "exp": "64"
+    },
+    {
+        "name": "Marowak",
+        "types": [
+            "ground"
+        ],
+        "number": "105",
+        "stats": {
+            "hp": 60,
+            "attack": 80,
+            "defense": 110,
+            "speed": 45,
+            "sp_atk": 50,
+            "sp_def": 80
+        },
+        "exp": "149"
+    },
+    {
+        "name": "Hitmonlee",
+        "types": [
+            "fighting"
+        ],
+        "number": "106",
+        "stats": {
+            "hp": 50,
+            "attack": 120,
+            "defense": 53,
+            "speed": 87,
+            "sp_atk": 35,
+            "sp_def": 110
+        },
+        "exp": "159"
+    },
+    {
+        "name": "Hitmonchan",
+        "types": [
+            "fighting"
+        ],
+        "number": "107",
+        "stats": {
+            "hp": 50,
+            "attack": 105,
+            "defense": 79,
+            "speed": 76,
+            "sp_atk": 35,
+            "sp_def": 110
+        },
+        "exp": "159"
+    },
+    {
+        "name": "Lickitung",
+        "types": [
+            "normal"
+        ],
+        "number": "108",
+        "stats": {
+            "hp": 90,
+            "attack": 55,
+            "defense": 75,
+            "speed": 30,
+            "sp_atk": 60,
+            "sp_def": 75
+        },
+        "exp": "77"
+    },
+    {
+        "name": "Koffing",
+        "types": [
+            "poison"
+        ],
+        "number": "109",
+        "stats": {
+            "hp": 40,
+            "attack": 65,
+            "defense": 95,
+            "speed": 35,
+            "sp_atk": 60,
+            "sp_def": 45
+        },
+        "exp": "68"
+    },
+    {
+        "name": "Weezing",
+        "types": [
+            "poison"
+        ],
+        "number": "110",
+        "stats": {
+            "hp": 65,
+            "attack": 90,
+            "defense": 120,
+            "speed": 60,
+            "sp_atk": 85,
+            "sp_def": 70
+        },
+        "exp": "172"
+    },
+    {
+        "name": "Rhyhorn",
+        "types": [
+            "rock",
+            "ground"
+        ],
+        "number": "111",
+        "stats": {
+            "hp": 80,
+            "attack": 85,
+            "defense": 95,
+            "speed": 25,
+            "sp_atk": 30,
+            "sp_def": 30
+        },
+        "exp": "69"
+    },
+    {
+        "name": "Rhydon",
+        "types": [
+            "rock",
+            "ground"
+        ],
+        "number": "112",
+        "stats": {
+            "hp": 105,
+            "attack": 130,
+            "defense": 120,
+            "speed": 40,
+            "sp_atk": 45,
+            "sp_def": 45
+        },
+        "exp": "170"
+    },
+    {
+        "name": "Chansey",
+        "types": [
+            "normal"
+        ],
+        "number": "113",
+        "stats": {
+            "hp": 250,
+            "attack": 5,
+            "defense": 5,
+            "speed": 50,
+            "sp_atk": 35,
+            "sp_def": 105
+        },
+        "exp": "395"
+    },
+    {
+        "name": "Tangela",
+        "types": [
+            "grass"
+        ],
+        "number": "114",
+        "stats": {
+            "hp": 65,
+            "attack": 55,
+            "defense": 115,
+            "speed": 60,
+            "sp_atk": 100,
+            "sp_def": 40
+        },
+        "exp": "87"
+    },
+    {
+        "name": "Kangaskhan",
+        "types": [
+            "normal"
+        ],
+        "number": "115",
+        "stats": {
+            "hp": 105,
+            "attack": 95,
+            "defense": 80,
+            "speed": 90,
+            "sp_atk": 40,
+            "sp_def": 80
+        },
+        "exp": "172"
+    },
+    {
+        "name": "Horsea",
+        "types": [
+            "water"
+        ],
+        "number": "116",
+        "stats": {
+            "hp": 30,
+            "attack": 40,
+            "defense": 70,
+            "speed": 60,
+            "sp_atk": 70,
+            "sp_def": 25
+        },
+        "exp": "59"
+    },
+    {
+        "name": "Seadra",
+        "types": [
+            "water"
+        ],
+        "number": "117",
+        "stats": {
+            "hp": 55,
+            "attack": 65,
+            "defense": 95,
+            "speed": 85,
+            "sp_atk": 95,
+            "sp_def": 45
+        },
+        "exp": "154"
+    },
+    {
+        "name": "Goldeen",
+        "types": [
+            "water"
+        ],
+        "number": "118",
+        "stats": {
+            "hp": 45,
+            "attack": 67,
+            "defense": 60,
+            "speed": 63,
+            "sp_atk": 35,
+            "sp_def": 50
+        },
+        "exp": "64"
+    },
+    {
+        "name": "Seaking",
+        "types": [
+            "water"
+        ],
+        "number": "119",
+        "stats": {
+            "hp": 80,
+            "attack": 92,
+            "defense": 65,
+            "speed": 68,
+            "sp_atk": 65,
+            "sp_def": 80
+        },
+        "exp": "158"
+    },
+    {
+        "name": "Staryu",
+        "types": [
+            "water"
+        ],
+        "number": "120",
+        "stats": {
+            "hp": 30,
+            "attack": 45,
+            "defense": 55,
+            "speed": 85,
+            "sp_atk": 70,
+            "sp_def": 55
+        },
+        "exp": "68"
+    },
+    {
+        "name": "Starmie",
+        "types": [
+            "psychic",
+            "water"
+        ],
+        "number": "121",
+        "stats": {
+            "hp": 60,
+            "attack": 75,
+            "defense": 85,
+            "speed": 115,
+            "sp_atk": 100,
+            "sp_def": 85
+        },
+        "exp": "182"
+    },
+    {
+        "name": "Mr. Mime",
+        "types": [
+            "psychic",
+            "fairy"
+        ],
+        "number": "122",
+        "stats": {
+            "hp": 40,
+            "attack": 45,
+            "defense": 65,
+            "speed": 90,
+            "sp_atk": 100,
+            "sp_def": 120
+        },
+        "exp": "161"
+    },
+    {
+        "name": "Scyther",
+        "types": [
+            "bug",
+            "flying"
+        ],
+        "number": "123",
+        "stats": {
+            "hp": 70,
+            "attack": 110,
+            "defense": 80,
+            "speed": 105,
+            "sp_atk": 55,
+            "sp_def": 80
+        },
+        "exp": "100"
+    },
+    {
+        "name": "Jynx",
+        "types": [
+            "psychic",
+            "ice"
+        ],
+        "number": "124",
+        "stats": {
+            "hp": 65,
+            "attack": 50,
+            "defense": 35,
+            "speed": 95,
+            "sp_atk": 115,
+            "sp_def": 95
+        },
+        "exp": "159"
+    },
+    {
+        "name": "Electabuzz",
+        "types": [
+            "electric"
+        ],
+        "number": "125",
+        "stats": {
+            "hp": 65,
+            "attack": 83,
+            "defense": 57,
+            "speed": 105,
+            "sp_atk": 95,
+            "sp_def": 85
+        },
+        "exp": "172"
+    },
+    {
+        "name": "Magmar",
+        "types": [
+            "fire"
+        ],
+        "number": "126",
+        "stats": {
+            "hp": 65,
+            "attack": 95,
+            "defense": 57,
+            "speed": 93,
+            "sp_atk": 100,
+            "sp_def": 85
+        },
+        "exp": "173"
+    },
+    {
+        "name": "Pinsir",
+        "types": [
+            "bug"
+        ],
+        "number": "127",
+        "stats": {
+            "hp": 65,
+            "attack": 125,
+            "defense": 100,
+            "speed": 85,
+            "sp_atk": 55,
+            "sp_def": 70
+        },
+        "exp": "175"
+    },
+    {
+        "name": "Tauros",
+        "types": [
+            "normal"
+        ],
+        "number": "128",
+        "stats": {
+            "hp": 75,
+            "attack": 100,
+            "defense": 95,
+            "speed": 110,
+            "sp_atk": 40,
+            "sp_def": 70
+        },
+        "exp": "172"
+    },
+    {
+        "name": "Magikarp",
+        "types": [
+            "water"
+        ],
+        "number": "129",
+        "stats": {
+            "hp": 20,
+            "attack": 10,
+            "defense": 55,
+            "speed": 80,
+            "sp_atk": 15,
+            "sp_def": 20
+        },
+        "exp": "40"
+    },
+    {
+        "name": "Gyarados",
+        "types": [
+            "water",
+            "flying"
+        ],
+        "number": "130",
+        "stats": {
+            "hp": 95,
+            "attack": 125,
+            "defense": 79,
+            "speed": 81,
+            "sp_atk": 60,
+            "sp_def": 100
+        },
+        "exp": "189"
+    },
+    {
+        "name": "Lapras",
+        "types": [
+            "ice",
+            "water"
+        ],
+        "number": "131",
+        "stats": {
+            "hp": 130,
+            "attack": 85,
+            "defense": 80,
+            "speed": 60,
+            "sp_atk": 85,
+            "sp_def": 95
+        },
+        "exp": "187"
+    },
+    {
+        "name": "Ditto",
+        "types": [
+            "normal"
+        ],
+        "number": "132",
+        "stats": {
+            "hp": 48,
+            "attack": 48,
+            "defense": 48,
+            "speed": 48,
+            "sp_atk": 48,
+            "sp_def": 48
+        },
+        "exp": "101"
+    },
+    {
+        "name": "Eevee",
+        "types": [
+            "normal"
+        ],
+        "number": "133",
+        "stats": {
+            "hp": 55,
+            "attack": 55,
+            "defense": 50,
+            "speed": 55,
+            "sp_atk": 45,
+            "sp_def": 65
+        },
+        "exp": "65"
+    },
+    {
+        "name": "Vaporeon",
+        "types": [
+            "water"
+        ],
+        "number": "134",
+        "stats": {
+            "hp": 130,
+            "attack": 65,
+            "defense": 60,
+            "speed": 65,
+            "sp_atk": 110,
+            "sp_def": 95
+        },
+        "exp": "184"
+    },
+    {
+        "name": "Jolteon",
+        "types": [
+            "electric"
+        ],
+        "number": "135",
+        "stats": {
+            "hp": 65,
+            "attack": 65,
+            "defense": 60,
+            "speed": 130,
+            "sp_atk": 110,
+            "sp_def": 95
+        },
+        "exp": "184"
+    },
+    {
+        "name": "Flareon",
+        "types": [
+            "fire"
+        ],
+        "number": "136",
+        "stats": {
+            "hp": 65,
+            "attack": 130,
+            "defense": 60,
+            "speed": 65,
+            "sp_atk": 95,
+            "sp_def": 110
+        },
+        "exp": "184"
+    },
+    {
+        "name": "Porygon",
+        "types": [
+            "normal"
+        ],
+        "number": "137",
+        "stats": {
+            "hp": 65,
+            "attack": 60,
+            "defense": 70,
+            "speed": 40,
+            "sp_atk": 85,
+            "sp_def": 75
+        },
+        "exp": "79"
+    },
+    {
+        "name": "Omanyte",
+        "types": [
+            "water",
+            "rock"
+        ],
+        "number": "138",
+        "stats": {
+            "hp": 35,
+            "attack": 40,
+            "defense": 100,
+            "speed": 35,
+            "sp_atk": 90,
+            "sp_def": 55
+        },
+        "exp": "71"
+    },
+    {
+        "name": "Omastar",
+        "types": [
+            "water",
+            "rock"
+        ],
+        "number": "139",
+        "stats": {
+            "hp": 70,
+            "attack": 60,
+            "defense": 125,
+            "speed": 55,
+            "sp_atk": 115,
+            "sp_def": 70
+        },
+        "exp": "173"
+    },
+    {
+        "name": "Kabuto",
+        "types": [
+            "water",
+            "rock"
+        ],
+        "number": "140",
+        "stats": {
+            "hp": 30,
+            "attack": 80,
+            "defense": 90,
+            "speed": 55,
+            "sp_atk": 55,
+            "sp_def": 45
+        },
+        "exp": "71"
+    },
+    {
+        "name": "Kabutops",
+        "types": [
+            "water",
+            "rock"
+        ],
+        "number": "141",
+        "stats": {
+            "hp": 60,
+            "attack": 115,
+            "defense": 105,
+            "speed": 80,
+            "sp_atk": 65,
+            "sp_def": 70
+        },
+        "exp": "173"
+    },
+    {
+        "name": "Aerodactyl",
+        "types": [
+            "rock",
+            "flying"
+        ],
+        "number": "142",
+        "stats": {
+            "hp": 80,
+            "attack": 105,
+            "defense": 65,
+            "speed": 130,
+            "sp_atk": 60,
+            "sp_def": 75
+        },
+        "exp": "180"
+    },
+    {
+        "name": "Snorlax",
+        "types": [
+            "normal"
+        ],
+        "number": "143",
+        "stats": {
+            "hp": 160,
+            "attack": 110,
+            "defense": 65,
+            "speed": 30,
+            "sp_atk": 65,
+            "sp_def": 110
+        },
+        "exp": "189"
+    },
+    {
+        "name": "Articuno",
+        "types": [
+            "ice",
+            "flying"
+        ],
+        "number": "144",
+        "stats": {
+            "hp": 90,
+            "attack": 85,
+            "defense": 100,
+            "speed": 85,
+            "sp_atk": 95,
+            "sp_def": 125
+        },
+        "exp": "290"
+    },
+    {
+        "name": "Zapdos",
+        "types": [
+            "electric",
+            "flying"
+        ],
+        "number": "145",
+        "stats": {
+            "hp": 90,
+            "attack": 90,
+            "defense": 85,
+            "speed": 100,
+            "sp_atk": 125,
+            "sp_def": 90
+        },
+        "exp": "290"
+    },
+    {
+        "name": "Moltres",
+        "types": [
+            "fire",
+            "flying"
+        ],
+        "number": "146",
+        "stats": {
+            "hp": 90,
+            "attack": 100,
+            "defense": 90,
+            "speed": 90,
+            "sp_atk": 125,
+            "sp_def": 85
+        },
+        "exp": "290"
+    },
+    {
+        "name": "Dratini",
+        "types": [
+            "dragon"
+        ],
+        "number": "147",
+        "stats": {
+            "hp": 41,
+            "attack": 64,
+            "defense": 45,
+            "speed": 50,
+            "sp_atk": 50,
+            "sp_def": 50
+        },
+        "exp": "60"
+    },
+    {
+        "name": "Dragonair",
+        "types": [
+            "dragon"
+        ],
+        "number": "148",
+        "stats": {
+            "hp": 61,
+            "attack": 84,
+            "defense": 65,
+            "speed": 70,
+            "sp_atk": 70,
+            "sp_def": 70
+        },
+        "exp": "147"
+    },
+    {
+        "name": "Dragonite",
+        "types": [
+            "dragon",
+            "flying"
+        ],
+        "number": "149",
+        "stats": {
+            "hp": 91,
+            "attack": 134,
+            "defense": 95,
+            "speed": 80,
+            "sp_atk": 100,
+            "sp_def": 100
+        },
+        "exp": "300"
+    },
+    {
+        "name": "Mewtwo",
+        "types": [
+            "psychic"
+        ],
+        "number": "150",
+        "stats": {
+            "hp": 106,
+            "attack": 110,
+            "defense": 90,
+            "speed": 130,
+            "sp_atk": 154,
+            "sp_def": 90
+        },
+        "exp": "340"
+    }
+]
